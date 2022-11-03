@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const app = express()
+const PORT = process.env.PORT || 3125;
 
 let users = ["ismaelseidel"]
 let contas = []
@@ -62,4 +63,4 @@ app.post('/login', (req, res) => {
     }
 })
 
-app.listen(3125, ()=>console.log("Listening"))
+app.listen(PORT, ()=>console.log("Listening"))
