@@ -9,7 +9,13 @@ app.use(cors({
     origin: '*'
 }));
 
-app.use(express.json())
+app.use(express.json());
+
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+    res.send('Hello world!');
+});
 
 app.post('/check-user', (req, res) => {    
     let username = req.body.username    
