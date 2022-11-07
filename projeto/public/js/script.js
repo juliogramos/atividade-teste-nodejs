@@ -26,10 +26,9 @@ function mostrarApenasConta() {
 }
 
 function mostrarApenasLogado(userJson) {
-    aplicarNasQuatroTelas(false, false, false, true)
     let nomeCompleto = "Seja bem vindo " + userJson.name + " " + userJson.lastName + "!"
     document.getElementById("displayNome").innerHTML = nomeCompleto
-
+    aplicarNasQuatroTelas(false, false, false, true)
 }
 
 function mostrarTelaInicial() {
