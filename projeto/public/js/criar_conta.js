@@ -273,7 +273,7 @@ async function criarConta() {
         })
     }
 
-    const result = await fetch("http://127.0.0.1:3125/new-account", options);
+    const result = await fetch("http://testeservidor.julio.g.r.vms.ufsc.br:3125/new-account", options);
     const serverResponse = await result.json();
     if (serverResponse.valido) {
         mostrarApenasLogin();
